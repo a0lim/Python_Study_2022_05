@@ -38,8 +38,8 @@
     - angular 설명: https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines  
 
 - 문서 관련(docs)  
-    + docs: create/add/delete/correct [파일명/수정 대상]  
-    + ex. docs: create code_up_6001_6010  
+    + docs: create/add/delete/correct/change [파일명/수정 대상]  
+    + ex. docs: create README.md  
     
 - 코드 수정 관련(fix/feat/build)  
 
@@ -50,11 +50,12 @@
     + **feat: create feedback to [이름] about [파일명]**  
     + **feat: create [파일명]**  
     + **feat: add [코드]**  
-- build :빌드 관련 파일 수정(번역된 것과 그외 잡다한걸 모아서 실행 가능한 파일로 만듦)  
-    + build: change library [이전작업] to [이후작업]  
+    + **feat(api): move to [디렉토리 명]**
+- build :빌드 관련 파일 수정(빌드: 번역된 것과 그외 잡다한걸 모아서 실행 가능한 파일로 만듦)  
+    + ex. build: change library [이전 작업] to [이후 작업]  
 - refactor: 프로덕션 코드 리팩터링(버그를 고치거나 새로운 기능을 추가하지 않는 그 외의 코드를 수정하는 경우 ex. 외부 라이브러리 추가)   
-    + **refactor: create code feedback**  
-- style: 코드에 영향을 주지 않는 단순한 수정을 하는 경우(오타, 세미콜론 누락, 코드 포맷 변경 등)  
+    + **ex. refactor: create code feedback**  
+- style: 코드에 영향을 주지 않는 단순 수정(오타, 세미콜론 누락, 코드 포맷 변경 등)  
     + ex. 'style: delete/correct $'  
    
 
