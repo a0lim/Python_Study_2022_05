@@ -1,6 +1,6 @@
 # 6041
+from posixpath import split
 from regex import B, F
-
 
 a,b=input().split()
 a=int(a); b=int(b)
@@ -132,87 +132,78 @@ a=int(a); b=int(b); c=int(c)
 print((a if (a<b) else b) if ((a if (a<b) else b)<c) else c)
 
 # 6065
-a, b, c = input().split()
 
-a=int(a)
-b=int(b)
-c=int(c)
+a,b,c = map(int, input().split())
+a=int(a); b=int(b); c=int(c)
+list_input = [a, b, c]
 
-if a%2==0:
-    print(a)
-    
-if b%2==0:
-    print(b)
-    
-if c%2==0:
-    print(c)
+for i in list_input:
+    if i%2==0:
+        print(i)
  
 # 6066
-a, b, c = map(int, input().split())
+inputs = [int(i) for i in input().split()] ## create input list
 
-if (a % 2 == 0):
-    print("even")
+for i in range(0,3):
+    if inputs[i] % 2 == 0:
+        print("even")
+    else:
+        print("odd")
+
+
+# 6067 ###
+a = int(input())
+
+
+if a>0:
+    if a % 2 ==0:
+        print("C")
+    else:
+        print("D")
 else:
-    print("odd")
-    
-if (b % 2 == 0):
-    print("even")
-else:
-    print("odd")
-    
-if (c % 2 == 0):
-    print("even")
-else:
-    print("odd")
+    if a % 2 ==0:
+        print("A")
+    else:
+        print("B")
 
-# 6067
-n=int(input())
+# 6068
 
-if n<0:
-  if n%2==0:
-    print('A')
-  else:
-    print('B')
-else:
-  if n%2==0:
-    print('C')
-  else:
-    print('D')
+a = int(input())
 
-# 6038
-a=int(input())
-
-if a>=90:
+if a >= 90:
     print("A")
-elif a>=70:
+elif a>= 70:
     print("B")
-elif a>=40:
+elif a >= 40:
     print("C")
 else:
     print("D")
+    
 
 
-# 6039
-a=input()
+# 6069
+input_one = input()
 
-if a=='A':
+if input_one == "A":
     print("best!!!")
-elif a=='B':
+elif input_one == "B":
     print("good!!")
-elif a=='C':
+elif input_one == "C":
     print("run!")
-elif a=='D':
+elif input_one == "D":
     print("slowly~")
 else:
-    print("what?") 
+    print("what?")
 
-# 6040
-a=int(input())
-if a//3==1:
+
+# 6070
+month = int(input())
+
+if month // 3 == 1:
     print("spring")
-elif a//3==2:
+elif month // 3 == 2:
     print("summer")
-elif a//3==3:
+elif month // 3 == 3:
     print("fall")
 else:
     print("winter")
